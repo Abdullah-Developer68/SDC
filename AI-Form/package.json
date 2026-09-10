@@ -1,0 +1,26 @@
+{
+  "name": "ai-form-app",
+  "version": "1.0.0",
+  "description": "Full-stack Signup and Login authentication system with React, Tailwind CSS, Express, MongoDB, and JWT",
+  "scripts": {
+    "dev": "concurrently -n \"backend,frontend\" -c \"bgBlue.bold,bgMagenta.bold\" \"npm run backend\" \"npm run frontend\"",
+    "start": "npm run dev",
+    "backend": "npm --prefix backend run dev",
+    "frontend": "npm --prefix frontend run dev",
+    "test": "node backend/test-e2e.js",
+    "build:frontend": "npm --prefix frontend run build",
+    "install:all": "npm --prefix backend install && npm --prefix frontend install"
+  },
+  "keywords": [
+    "react",
+    "express",
+    "mongodb",
+    "tailwind",
+    "jwt"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^10.0.5"
+  }
+}
